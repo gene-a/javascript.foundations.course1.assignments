@@ -1,3 +1,5 @@
+'use strict';
+
 // Values and Variables
 const country = 'Philippines';
 const continent = 'Asia'
@@ -38,14 +40,14 @@ if (isMyComuntryPopGreaterThanPortugalPop) {
 // 5. 1143
 
 // Equality Operators
-// const numNeighbors = prompt (`How many neighbor countries does your country have?`);
-// if (numNeighbors == 1) {
-//     console.log(`Only 1 border!`);
-// } else if (numNeighbors > 1) {
-//     console.log(`More than 1 border!`);
-// } else {
-//     console.log(`No borders!`);
-// }
+const numNeighbors = prompt (`How many neighbor countries does your country have?`);
+if (numNeighbors == 1) {
+    console.log(`Only 1 border!`);
+} else if (numNeighbors > 1) {
+    console.log(`More than 1 border!`);
+} else {
+    console.log(`No borders!`);
+}
 
 // Logical Operators
 const sarahMinimumPop = 50000000;
@@ -82,3 +84,6 @@ switch (countryLang.toLowerCase()) {
         console.log(`great language too`);
         break;
 }
+
+// Ternary operator
+console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`);
